@@ -28,6 +28,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="ChangeFileAttributes.ps1" />
     <Compile Include="ListUserLogin.ps1" />
     <Compile Include="EmailtheResults.ps1" />
   </ItemGroup>
