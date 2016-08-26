@@ -1,0 +1,25 @@
+
+1 – Boot from repair disc > Choose Keyboard type > click Troubleshoot > click Advanced options > choose Automatic Repair
+if that fails then use:
+2 -Boot from Recovery disc or Install disc
+-Boot from repair disc > Chose Keyboard type > click Troubleshoot > click Advanced options > choose Command Prompt
+or
+-Boot from Install disc > Click Next > click Repair your computer > click Troubleshoot > click Advanced options > chooseCommand Prompt
+
+Diskpart
+
+List disk
+Select disk 0
+List partition
+Select Partition 1
+Active
+Exit
+
+Reboot
+
+type > bootrec /fixmbr (writes mbr but does not overwrite partition table)
+type > bootrec /fixboot (writes new boot sector to system partition)
+type > bootrec /scanos (scans for other OS’s that you might want to add to bcd)
+(personally I find the above unneeded and only use the last step)
+type > bootrec /rebuildbcd (scans for other OS’s, unlike rebuildbcd it allows you to select the OS’s you want to add to bcd)
+Reboot

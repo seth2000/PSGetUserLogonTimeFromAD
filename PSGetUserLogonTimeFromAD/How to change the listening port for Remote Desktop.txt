@@ -1,0 +1,8 @@
+
+Locate and then click the following registry subkey:
+	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TerminalServer\WinStations\RDP-Tcp\PortNumber
+Select PortNumber and double click on it then click Decimal.
+Find the "PortNumber" subkey and notice the value of 00000D3D, hex for (3389)
+Type the new port number, and then click OK. 
+Quit Registry Editor.
+Restart the computer.

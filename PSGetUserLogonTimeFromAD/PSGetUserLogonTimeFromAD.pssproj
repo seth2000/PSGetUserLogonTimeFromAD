@@ -26,9 +26,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="How to change the listening port for Remote Desktop.txt" />
+    <Content Include="Windows 2012  ReBuild  DCD.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeFileAttributes.ps1" />
+    <Compile Include="Get a list of Mailboxes with sizes and sorted by size.ps1" />
     <Compile Include="ListUserLogin.ps1" />
     <Compile Include="EmailtheResults.ps1" />
   </ItemGroup>
